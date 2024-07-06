@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import styles from "./Carousel.module.css";
+import styles from "./carousel.module.css";
 
 interface CarouselItem {
   src: string;
