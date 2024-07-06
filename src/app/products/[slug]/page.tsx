@@ -7,6 +7,8 @@ import AddWishlist from "@/components/CTA/addWishlist";
 import { getProductBySlug } from "@/db/models/products";
 import { ProductModel } from "@/db/models/products";
 import ImageBox from "@/components/productDetails/imageBox";
+import SuccessModal from "@/components/modals/successMessage";
+import ErrorModal from "@/components/modals/errorMessage";
 
 function formatNumber(num: number): string {
   return new Intl.NumberFormat("id-ID").format(num);
@@ -30,17 +32,19 @@ export default async function ProductDetail({
   params: { slug: string };
 }) {
   const product: ProductModel = await getProductBySlug(params.slug);
-
+  
   return (
     <>
       <div className="pageBody">
+        <ErrorModal />
+        <SuccessModal />
         <div className={styles.frameParent}>
           <div className={styles.frameGroup}>
             <Image alt="" className={styles.frameChild} src={product.thumbnail} width={1000} height={1000}/>
             <div className={styles.frameContainer}>
               {product.images.map((image) => {
                 return (
-                  <ImageBox key={image} src={image}/>
+                  <ImageBox key={Math.random()} src={image}/>
                 )
               })}
             </div>
@@ -138,7 +142,7 @@ export default async function ProductDetail({
                     />
                     <div className={styles.ramPcKaizen}>Chat</div>
                   </div>
-                  <AddWishlist />
+                  <AddWishlist productId={product._id.toString()}/>
                   <div className={styles.frameParent9}>
                     <Image
                       className={styles.frameChild4}
