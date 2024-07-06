@@ -1,0 +1,56 @@
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  row-gap: 20px;
+}
+
+.scrollContainer {
+  height: 80vh; /* Set the desired height for the scrollable area */
+  overflow-y: auto;
+}
+
+.selected {
+  width: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #00aa5b;
+  align-self: stretch;
+  position: relative;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.unselected {
+  align-self: stretch;
+  position: relative;
+  width: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.frameParent {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  gap: 10px;
+  text-align: left;
+  font-size: 22px;
+  color: #000;
+  font-family: Arial;
+  border-bottom: 1px solid rgb(197, 197, 197);
+}

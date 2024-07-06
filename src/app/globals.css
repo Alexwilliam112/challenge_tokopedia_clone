@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.pageBody {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.pageBody2 {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+/* ! HEADER STYLE */

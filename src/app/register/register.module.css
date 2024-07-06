@@ -1,0 +1,179 @@
+.tkpLogo1Icon {
+  width: 160px;
+  position: relative;
+  height: 34px;
+  object-fit: cover;
+}
+.registerbg1Icon {
+  width: 561px;
+  position: relative;
+  height: 474px;
+  object-fit: cover;
+}
+.daftarSekarang {
+  position: relative;
+  cursor: pointer;
+}
+.b {
+  font-family: Arial;
+  cursor: pointer;
+}
+.daftar {
+  color: #42b549;
+  cursor: pointer;
+}
+.daftar:hover {
+  font-weight: bold;
+}
+.sudahPunyaAkunContainer {
+  position: relative;
+  font-size: 16px;
+}
+.daftarSekarangParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 28px;
+  color: #000;
+}
+.google1Icon {
+  width: 20px;
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.google1Parent {
+  align-self: stretch;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #6d7588;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 10px;
+  gap: 10px;
+}
+.frameWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #6d7588;
+}
+.frameChild {
+  width: 123px;
+  position: relative;
+  background-color: #d6dfeb;
+  height: 1px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  text-align: center;
+  font-size: 12px;
+}
+.emailWrapper {
+  align-self: stretch;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #bfc9d9;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 10px;
+}
+.frameContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.lanjutWrapper {
+  align-self: stretch;
+  border-radius: 8px;
+  background-color: #42b549;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 10px;
+  color: #fff;
+  border: 0px;
+}
+.denganMendaftarSaya {
+  margin: 0;
+}
+.syaratKetentuan {
+  font-family: Arial;
+  color: #42b549;
+}
+.serta {
+  font-family: Arial;
+  color: #000;
+}
+.syaratKetentuanSertaKebij {
+  margin: 0;
+  color: #42b549;
+}
+.denganMendaftarSayaContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #000;
+}
+.frameParent {
+  width: 448px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #c9dde0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 50px 30px;
+  gap: 20px;
+}
+.registerbg1Parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+}
+.tkpLogo1Parent {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  text-align: left;
+  font-size: 16px;
+  color: #bfc9d9;
+  font-family: Arial;
+}
+

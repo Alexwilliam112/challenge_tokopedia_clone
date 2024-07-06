@@ -1,0 +1,387 @@
+.frameChild {
+  width: 442px;
+  position: relative;
+  border-radius: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 434px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameItem {
+  width: 76px;
+  position: relative;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 2px solid blue;
+  box-sizing: border-box;
+  height: 76px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.frameGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 13px;
+  margin-top: 20px;
+}
+.ramPcKaizen {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.ramPcKaizen2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 35px;
+}
+.terjual750Parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  font-size: 18px;
+  color: #7f7f7f;
+}
+.ramPcKaizenDd416gb25600Parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.rp495000 {
+  position: relative;
+  font-size: 36px;
+}
+.frameParent2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.frameChild3 {
+  align-self: stretch;
+  position: relative;
+  background-color: #e4e4e4;
+  height: 1px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.exercptHereInput {
+  align-self: stretch;
+  position: relative;
+  color: #000;
+}
+.tag1Parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+  color: #000;
+}
+.tagsParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+}
+.semuaEtalase {
+  position: relative;
+  color: #00aa5b;
+}
+.etalaseParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.exercptHereInputParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.january2024 {
+  position: relative;
+  color: #000;
+}
+.frameParent3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 25px;
+  font-size: 20px;
+  color: #898989;
+  font-family: Arial;
+}
+.frameParent1 {
+  width: 581px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.megaElectrodealsWrapper {
+  align-self: stretch;
+  border-radius: 10px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  background-image: url("/categoryCard/deal.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.aturJumlahDan {
+  align-self: stretch;
+  position: relative;
+}
+.div {
+  align-self: stretch;
+  width: 18px;
+  position: relative;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  flex-shrink: 0;
+}
+.div1 {
+  width: 12px;
+  position: relative;
+  font-size: 20px;
+  font-family: Arial;
+  color: #000;
+  display: flex;
+  align-items: center;
+  height: 54px;
+  flex-shrink: 0;
+}
+.div2 {
+  width: 26px;
+  position: relative;
+  font-weight: 200;
+  color: #00aa5b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.parent {
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #bfc9d9;
+  box-sizing: border-box;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px 7px;
+  gap: 15px;
+}
+.stokTotalParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 20px;
+  color: #000;
+  font-family: Arial;
+}
+.frameParent5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 40px;
+  color: #c9c9c9;
+  font-family: Inter;
+}
+.tambahCatatan {
+  align-self: stretch;
+  position: relative;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #00aa5b;
+}
+.rp4950001 {
+  position: relative;
+  font-size: 24px;
+  color: #000;
+}
+.subtotalParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #858585;
+}
+.keranjangWrapper {
+  align-self: stretch;
+  border-radius: 12px;
+  background-color: #00aa5b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 10px;
+  cursor: pointer;
+}
+.beliLangsungWrapper {
+  align-self: stretch;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #00aa5b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  color: #00aa5b;
+  cursor: pointer;
+}
+.frameParent7 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.frameChild4 {
+  width: 16px;
+  position: relative;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameParent9 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  cursor: pointer;
+}
+.frameChild5 {
+  width: 1px;
+  position: relative;
+  background-color: #e5e5e5;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameParent8 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #000;
+}
+.frameParent6 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+  color: #fff;
+}
+.aturJumlahDanCatatanParent {
+  align-self: stretch;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #bfc9d9;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px 16px;
+  gap: 21px;
+  font-size: 20px;
+  color: #000;
+  font-family: Arial;
+}
+.frameChild9 {
+  width: 335px;
+  position: relative;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 112px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  background-image: url("/promo/promo4.jpg");
+  object-fit: contain;
+}
+.frameParent4 {
+  width: 335px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 21px;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 20px;
+}
+.frameParent {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 50px;
+  text-align: left;
+  font-size: 24px;
+  color: #000;
+  font-family: Inter;
+  margin-top: 50px;
+}
+
+.store {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

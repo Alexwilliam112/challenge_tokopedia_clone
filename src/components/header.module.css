@@ -1,0 +1,110 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  padding-top: 20px;
+  background-color: white;
+  height: 70px;
+}
+
+.headerLeft {
+  flex: 1;
+}
+
+.title {
+  margin: 0;
+}
+
+.headerCenter {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.searchBar {
+  width: 80%;
+  padding: 5px 15px;
+  font-size: 16px;
+  color: rgb(85, 85, 85);
+  border-radius: 5px;
+  border: 1px solid #03AC0E;
+}
+
+.headerRight {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.iconGroup {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon {
+  margin: 0 10px;
+  cursor: pointer;
+  width: 25px;
+  color: rgb(85, 85, 85);
+  font-size: 30px;
+}
+
+.username {
+  margin-left: 10px;
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+}
+
+.logout {
+  margin-left: 10px;
+  color: rgb(11, 167, 0);
+  font-weight: 600;
+}
+
+.logout:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.headerSecond {
+  padding: 7px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  border-bottom: 1px solid rgb(235, 235, 235);
+  font-size: 13px;
+  font-weight: 400;
+  color: gray;
+}
+
+.signupButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 15px;
+  background-color: rgb(11, 167, 0);
+  color: white;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 110px;
+}
+
+.loginButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 15px;
+  color: rgb(11, 167, 0);
+  border: 1px solid rgb(11, 167, 0);
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 90px;
+}

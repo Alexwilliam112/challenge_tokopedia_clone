@@ -1,0 +1,67 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carouselInner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carouselItem {
+  flex: 0 0 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselItem.active {
+  display: flex;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.carouselControls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carouselControl {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carouselIndicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carouselIndicator {
+  background-color: #fff;
+  border: none;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carouselIndicator.active {
+  background-color: #000;
+}

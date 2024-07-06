@@ -1,0 +1,23 @@
+.removeButton {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  padding: 10px 10px;
+  background-color: white;
+  border: 1.5px solid #04ac0f;
+  color: #04ac0f;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.removeButton:hover {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  padding: 10px 10px;
+  background-color: white;
+  border: 1.5px solid #04ac0f;
+  background-color: #04ac0f;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}

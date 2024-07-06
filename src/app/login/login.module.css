@@ -1,0 +1,233 @@
+.loginbg1Icon {
+  width: 816px;
+  position: absolute;
+  margin: 0 !important;
+  top: 32px;
+  left: 0px;
+  height: 587px;
+  object-fit: cover;
+  z-index: 0;
+}
+.tkpLogo1Icon {
+  width: 160px;
+  position: relative;
+  height: 34px;
+  object-fit: cover;
+}
+.masuk {
+  position: relative;
+}
+.loginButton {
+  position: relative;
+  color: white;
+}
+.daftar {
+  position: relative;
+  font-size: 16px;
+  color: #42b549;
+  cursor: pointer;
+}
+.daftar:hover {
+  font-weight: bold;
+}
+.masukParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 28px;
+}
+.nomorHpAtauEmailWrapper {
+  align-self: stretch;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #bfc9d9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 10px;
+  color: black;
+}
+.contohTestusermailcom {
+  align-self: stretch;
+  position: relative;
+  font-size: 10px;
+  color: #919191;
+}
+.frameContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3px;
+  color: #bfc9d9;
+}
+.butuhBantuanWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 10px;
+  font-size: 13px;
+  color: #42b549;
+}
+.lanjutWrapper {
+  width: 307px;
+  border-radius: 8px;
+  background-color: #42b549;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 0px;
+}
+.frameChild {
+  width: 123px;
+  position: relative;
+  background-color: #d6dfeb;
+  height: 1px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameParent1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  text-align: center;
+  font-size: 12px;
+  color: #bfc9d9;
+}
+.scanKodeQrWrapper {
+  width: 307px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #6d7588;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 10px;
+}
+.google1Icon {
+  width: 20px;
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.google1Parent {
+  width: 307px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #6d7588;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 10px;
+  gap: 10px;
+}
+.frameParent2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+  color: #6d7588;
+}
+.frameDiv {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 25px;
+  color: #fff;
+}
+.frameGroup {
+  align-self: stretch;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #c9dde0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 50px 30px;
+  gap: 20px;
+}
+.tkpLogo1Parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.bantuan {
+  position: relative;
+  color: #00aa5b;
+}
+.ptTokopediaParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  font-size: 13px;
+  color: #494949;
+}
+.frameParent {
+  width: 367px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 80px;
+  z-index: 1;
+}
+.loginbg1Parent {
+  padding-bottom: 10px;
+  width: 816px;
+  height: 651px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.body {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 730px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: 16px;
+  color: #000;
+  font-family: Arial;
+}
+.gapBox {
+  height: 10px;
+}

@@ -1,0 +1,180 @@
+.frameChild {
+  align-self: stretch;
+  position: relative;
+  border-radius: 14px;
+  background-color: #bebebe;
+  /* border: 2px solid #00d451; */
+  box-sizing: border-box;
+  height: 237px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.laptop {
+  position: relative;
+  font-weight: 500;
+}
+
+.laptopWrapper {
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 10px;
+}
+
+.frameContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: #000;
+  font-family: Arial;
+}
+
+.productName {
+  align-self: stretch;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.productPrice {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.excerpt {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.storeName {
+  align-self: stretch;
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  color: #848484;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.soldStats {
+  align-self: stretch;
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  color: #848484;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.frameGroup {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px 25px;
+}
+
+.frameParent {
+  width: 250px;
+  position: relative;
+  border-radius: 15px;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 510px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+  text-align: left;
+  font-size: 12px;
+  color: #000;
+  font-family: Arial;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.frameParentWishlist {
+  width: 250px;
+  position: relative;
+  border-radius: 15px;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+  text-align: left;
+  font-size: 12px;
+  color: #000;
+  font-family: Arial;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.removeButton {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  padding: 10px 10px;
+  background-color: white;
+  border: 1.5px solid #04ac0f;
+  color: #04ac0f;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.removeButton:hover {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  padding: 10px 10px;
+  background-color: white;
+  border: 1.5px solid #04ac0f;
+  background-color: #04ac0f;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.buyButton {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  padding: 10px 10px;
+  background-color: white;
+  border: 1.5px solid #04ac0f;
+  background-color: #04ac0f;
+  color: white;
+  border-radius: 7px;
+}
