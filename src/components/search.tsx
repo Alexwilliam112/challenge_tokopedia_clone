@@ -1,11 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import styles from "./header.module.css";
 
-const Search = () => {
-  const [searchTerm, setSearchTerm] = useState<string>("");
-  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState<string>(searchTerm);
+export default function Search() {
+  const searchParams = useSearchParams();
+  const initialSearchTerm = searchParams.get("search") || "";
+  const [searchTerm, setSearchTerm] = useState<string>(initialSearchTerm);
+  const [debouncedSearchTerm, setDebouncedSearchTerm] = useState<string>(initialSearchTerm);
   const router = useRouter();
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -31,7 +33,7 @@ const Search = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setDebouncedSearchTerm(searchTerm);
-    router.push(`/products?search=${searchTerm}`,);
+    router.push(`/products?search=${searchTerm}`);
   };
 
   return (
@@ -45,6 +47,4 @@ const Search = () => {
       />
     </form>
   );
-};
-
-export default Search;
+}
