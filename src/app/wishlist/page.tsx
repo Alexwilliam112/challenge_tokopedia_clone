@@ -122,6 +122,7 @@ export default function Wishlist() {
                       <ProductCard
                         id={product._id.toString()}
                         key={index}
+                        slug={product.slug}
                         name={product.name}
                         excerpt={product.excerpt}
                         price={product.price}
