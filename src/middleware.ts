@@ -1,50 +1,56 @@
 import { NextRequest, NextResponse } from "next/server";
 import { cookies } from "next/headers";
-import { readPayloadJose } from "./lib/jwt";
+import { readPayload } from "./lib/jwt";
 
 export const middleware = async (request: NextRequest) => {
-  
+  const url = new URL(request.url);
+
   if (
-    !request.url.includes("/api") &&
-    !request.url.includes("_next/static") &&
-    !request.url.includes("_next/image") &&
-    !request.url.includes("favicon.ico")
+    !url.pathname.includes("/api") &&
+    !url.pathname.includes("_next/static") &&
+    !url.pathname.includes("_next/image") &&
+    !url.pathname.includes("favicon.ico")
   ) {
-    console.log(request.method, request.url);
+    console.log(`${request.method} ${request.url}`);
   }
 
-  if (request.url.includes("/api")) {
+  if (url.pathname.includes("/api")) {
     console.log("API", request.method, request.url);
 
-    if (request.url.includes("/api/search")) {
-      console.log(`API /api/search`);
-      
+    if (url.pathname.includes("/api/search")) {
+      console.log("API /api/search accessed");
       return NextResponse.next();
     }
 
-    const cookiesStore = cookies();
-    const token = cookiesStore.get("token");
+    const cookieStore = cookies();
+    const tokenCookie = cookieStore.get("token");
+    
+    const token = tokenCookie?.value;
+    console.log("Extracted Token:", token);
 
     if (!token) {
-      return NextResponse.json({
-        statusCode: 401,
-        error: "Unauthorized",
-      });
+      console.log("No token found, unauthorized access");
+      return NextResponse.json({ statusCode: 401, error: "Unauthorized" });
     }
 
-    const tokenData = await readPayloadJose<{ id: string; email: string }>(
-      token.value,
-    );
+    try {
+      const tokenData = await readPayload(token);
+      console.log("Token payload:", tokenData);
 
-    const requestHeaders = new Headers(request.headers);
+      const requestHeaders = new Headers(request.headers);
+      requestHeaders.set("x-user-id", tokenData.id);
+      requestHeaders.set("x-user-email", tokenData.email);
+      requestHeaders.set("x-custom-value", "Ini untuk mencoba data tambahan");
 
-    requestHeaders.set("x-user-id", tokenData.id);
-    requestHeaders.set("x-user-email", tokenData.email);
-    requestHeaders.set("x-custom-value", "Ini untuk mencoba data tambahan");
-
-    return NextResponse.next({
-      headers: requestHeaders,
-    });
+      return NextResponse.next({
+        request: {
+          headers: requestHeaders,
+        },
+      });
+    } catch (error) {
+      console.error("Token verification error:", error);
+      return NextResponse.json({ statusCode: 401, error: "Unauthorized" });
+    }
   }
 
   return NextResponse.next();

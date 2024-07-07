@@ -16,8 +16,8 @@ function parseCookies(cookieString: string): ParsedCookies {
     }, {});
 }
 
-function getUserId(token: string) {
-  const payload = readPayload(token);
+async function getUserId(token: string) {
+  const payload = await readPayload(token);
   return payload.id;
 }
 
@@ -30,7 +30,7 @@ export async function DELETE(
   const token = parsedCookies.token;
 
   const productId = params.id
-  const userId = getUserId(token)
+  const userId = await getUserId(token)
   await removeWishlist(productId, userId)
 
   return NextResponse.json({

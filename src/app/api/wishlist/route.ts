@@ -21,8 +21,8 @@ function parseCookies(cookieString: string): ParsedCookies {
     }, {});
 }
 
-function getUserId(token: string) {
-  const payload = readPayload(token);
+async function getUserId(token: string) {
+  const payload = await readPayload(token);
   return payload.id;
 }
 
@@ -30,7 +30,7 @@ export async function GET(request: NextRequest) {
   const cookies = request.headers.get("cookie");
   const parsedCookies = parseCookies(cookies || "");
   const token = parsedCookies.token;
-  const wishlists = await getWishlist(getUserId(token));
+  const wishlists = await getWishlist(await getUserId(token));
   const products = wishlists.map((wishlist) => {
     return wishlist.product
   })
@@ -43,7 +43,7 @@ export async function POST(request: NextRequest) {
     const cookies = request.headers.get("cookie");
     const parsedCookies = parseCookies(cookies || "");
     const token = parsedCookies.token;
-    const userId = getUserId(token);
+    const userId = await getUserId(token);
     const productId = await request.json();
 
     const wishlistInput = {

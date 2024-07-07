@@ -38,18 +38,19 @@ export const handleLogin = async (formData: FormData) => {
   }
 
   const payload = {
-    id: user._id,
+    id: user._id.toString(),
     email: user.email,
     username: user.username
   };
 
-  const token = createToken(payload);
+  const token = await createToken(payload);
   cookies().set("token", token, {
     httpOnly: true,
     secure: false,
     expires: new Date(Date.now() + 1000 * 60 * 60),
     sameSite: "strict",
   });
+  
   cookies().set("username", user.username)
 
   return redirect(`/`);
