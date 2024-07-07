@@ -60,7 +60,8 @@ const Carousel: React.FC = () => {
               className={styles.carouselImage}
               width={80000}
               height={40000}
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
+              priority={true}
             />
           </div>
         ))}
