@@ -17,7 +17,7 @@ export default function Search() {
   useEffect(() => {
     const handler = setTimeout(() => {
       setDebouncedSearchTerm(searchTerm);
-    }, 400);
+    }, 100);
 
     return () => {
       clearTimeout(handler);
